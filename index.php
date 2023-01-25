@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <?php
+    <?php
+        require_once 'db.php';
         require_once 'models/products.php';
         require_once 'models/food.php';
         require_once 'models/kennel.php';
         require_once 'models/game.php';
-    ?> 
+    ?>
 </head>
 <body>
     <div class="container">
@@ -21,65 +22,21 @@
         <div class="cards-container">
             <h3>CIBO</h3>   
             <div class="card">
-                <?php 
-                    foreach ($foods as $food) { 
-                        ?>
-
-                        <h5 class="card-title">
-                            <?php echo $food -> name ?>
-                        </h5>
-                        <p class="card-text">
-                            <?php echo $food -> description ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $prodotto -> price ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $food -> brand ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $food -> quantity  ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $food -> category ' $' ?>
-                        </p>
-
-                        <?php 
-                    } 
+                <?php
+                    echo $snacksDog -> getFood();
+                    echo "<br> <br>";
+                    echo $snacksCat -> getFood();
                 ?>
             </div>
         </div>
+        
         <div class="cards-container">
             <h3>CUCCE</h3>   
             <div class="card">
-                <?php 
-                    foreach ($  kennels as $kennel) { 
-                        ?>
-
-                        <h5 class="card-title">
-                            <?php echo $kennel -> name ?>
-                        </h5>
-                        <p class="card-text">
-                            <?php echo $kennel -> description ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $prodotto -> price ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $kennel -> brand ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $kennel -> dimension  ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $kennel -> material  ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $kennel -> category ' $' ?>
-                        </p>
-
-                        <?php 
-                    } 
+                <?php
+                    echo $kennelDog -> getKennel();
+                    echo "<br> <br>";
+                    echo $kennelCat -> getKennel();
                 ?>
             </div>
         </div>
@@ -87,31 +44,10 @@
         <div class="cards-container">
             <h3>GIOCHI</h3>   
             <div class="card">
-                <?php 
-                    foreach ($games as $game) { 
-                        ?>
-
-                        <h5 class="card-title">
-                            <?php echo $game -> name ?>
-                        </h5>
-                        <p class="card-text">
-                            <?php echo $game -> description ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $prodotto -> price ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $game -> brand ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $game -> dimension  ?>
-                        </p>
-                        <p class="card-text">
-                            <?php echo $game -> category ' $' ?>
-                        </p>
-
-                        <?php 
-                    } 
+                <?php
+                    echo $gameDog -> getGame();
+                    echo "<br> <br>";
+                    echo $gameCat -> getGame();
                 ?>
             </div>
         </div>
