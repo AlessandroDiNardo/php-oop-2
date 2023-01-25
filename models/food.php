@@ -2,14 +2,12 @@
 
 class Food extends Products {
 
-    public $brand;
     public $quantity;
 
-    public function __construct($name, $description, $price, $category, $brand, $quantity){
+    public function __construct($name, $description, $price, $category, $quantity){
 
         parent::__construct($name, $description, $price, $category)
 
-        $this -> brand = $brand;
         $this -> quantity = $quantity;
     }
 }
@@ -21,6 +19,6 @@ $food2 = new Food("Prolife Kitten", "Prolife Kitten Pollo per gatti cuccioli. Al
                     "Bustina monodose 85 gr");
 $food3 = new Food("Oasy Kitten", "Le crocchette per gatto Oasy Kitten Pollo sono un alimento secco completo specifico per gattini in crescita. 
                     Dallo svezzamento ai 12 mesi di vita, il gatto necessita di un nutrimento intenso in grado di assecondare lo sviluppo armonioso degli organi e dei tessuti", 45, "Gatto", "7,5kg");
-                    
+
 $foods = [$food1, $food2, $food3];
 ?>
