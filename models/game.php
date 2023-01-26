@@ -27,7 +27,7 @@ class Game extends Products {
         return "<h5> NOME: " . $this -> getName() . "</h1>" 
         . "<p> DESCRIZIONE: " . $this -> getDescription() . "</p>"
         . "<p> PREZZO:" . $this -> getPrice() . "</p>"
-        . "<p> CATEGORIA: " . $this -> getCategory() . "</p>"
+        . "<p> CATEGORIA: " . $this -> category -> getCategory() . "</p>"
         . "<p> DIMENSIONE': " . $this -> getDimension() . "</p>";
     }
 }
