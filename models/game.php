@@ -1,6 +1,5 @@
 <?php
 
-
 class Game extends Products {
 
     private $dimension;
@@ -24,11 +23,11 @@ class Game extends Products {
 
     public function getGame() {
 
-        return "<h5> NOME: " . $this -> getName() . "</h1>" 
+        return "<span> NOME: " . "<strong>". $this -> getName() . "</strong>" . "</span>" 
         . "<p> DESCRIZIONE: " . $this -> getDescription() . "</p>"
-        . "<p> PREZZO:" . $this -> getPrice() . "</p>"
+        . "<p> PREZZO:" . $this -> getPrice() . " euro" . "</p>"
         . "<p> CATEGORIA: " . $this -> category -> getCategory() . "</p>"
-        . "<p> DIMENSIONE': " . $this -> getDimension() . "</p>";
+        . "<p> DIMENSIONE: " . $this -> getDimension() . "</p>";
     }
 }
 ?>

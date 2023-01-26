@@ -22,9 +22,9 @@ class Food extends Products {
 
     public function getFood() {
 
-        return "<h5> NOME: " . $this -> getName() . "</h1>" 
+        return "<span> NOME: " . "<strong>". $this -> getName() . "</strong>" . "</span>" 
         . "<p> DESCRIZIONE: " . $this -> getDescription() . "</p>"
-        . "<p> PREZZO:" . $this -> getPrice() . "</p>"
+        . "<p> PREZZO:" . $this -> getPrice() . " euro" . "</p>"
         . "<p> CATEGORIA: " . $this -> category -> getCategory() . "</p>"
         . "<p> QUANTITA': " . $this -> getQuantity() . "</p>";
     }

@@ -33,7 +33,7 @@ $products =
     $games = 
     [
         new Game("Palla spargiricompensa per cani Camon", "Un gioco che non può mancare in casa per assicurare tanto divertimento al tuo amico 
-                peloso e per stimolare la sua mente dandogli modo di utilizzare le energie in eccesso. Questa palla si può riempire di piccoli snack che poi il cane si divertirà a far uscire rotolandola con il muso.", 7, "Diametro 7cm", $dog),
-        new Game("Tunnel per gatti", "Tunnel per gatti in tessuto", 20, "lunghezza 120cm",  $cat),
+                peloso e per stimolare la sua mente dandogli modo di utilizzare le energie in eccesso. Questa palla si può riempire di piccoli snack che poi il cane si divertirà a far uscire rotolandola con il muso.", 7,  $dog, "Diametro 7cm"),
+        new Game("Tunnel per gatti", "Tunnel per gatti in tessuto", 20, $cat, "lunghezza 120cm"),
     ],
 ];

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <?php
 
@@ -20,10 +21,8 @@
     <div class="container">
         <h1>PET SHOP</h1>
 
-        <h2>PRODOTTI:</h2>
-
         <div class="cards-container">
-            <h3>CIBO</h3>   
+            <h1>CIBO</h1>   
             <div class="card">
                 <?php
                         
@@ -36,7 +35,7 @@
         </div>
         
         <div class="cards-container">
-            <h3>CUCCE</h3>   
+            <h1>CUCCE</h1>   
             <div class="card">
                 <?php
                         
@@ -49,7 +48,7 @@
         </div>
 
         <div class="cards-container">
-            <h3>GIOCHI</h3>   
+            <h1>GIOCHI</h1>   
             <div class="card">
                 <?php
                         
