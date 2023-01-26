@@ -36,12 +36,31 @@ class Kennel extends Products {
 
     public function getKennel() {
 
-        return "<span> NOME: " . "<strong>". $this -> getName() . "</strong>" . "</span>" 
-        . "<p> DESCRIZIONE: " . $this -> getDescription() . "</p>"
-        . "<p> PREZZO:" . $this -> getPrice() . " euro" . "</p>"
-        . "<p> CATEGORIA: " . $this -> category -> getCategory() . "</p>"
-        . "<p> DIMENSIONE: " . $this -> getDimension() . "</p>"
-        . "<p> MATERIALE: " . $this -> getMaterial() . "</p>";
+        return 
+        "<div class='card'>"
+            . "<h3>" . $this -> getName() . "</h3>"  
+            . "<div>" 
+                . "<strong> DESCRIZIONE: </strong>" 
+                . $this -> getDescription() 
+            . "</div>"
+                . "<div>" 
+                . "<strong> PREZZO: </strong>"
+                . $this -> getPrice() 
+                . "€" 
+            . "</div>"
+            . "<div>" 
+                . "<strong> CATEGORIA: </strong>" 
+                . $this -> category -> getCategory() 
+            . "</div>"
+            . "<div>" 
+                . "<strong> DIMENSIONE: </strong>"
+                . $this -> getDimension() 
+            . "</div>"
+            . "<div>"
+                . "<strong> MATERIALE: </strong>"
+                . $this -> getMaterial() 
+            . "</div>"
+        ."</div>";
     }
 }
 ?>

@@ -18,12 +18,15 @@
     ?>
 </head>
 <body>
-    <div class="container">
+    <header class="title-cont">
         <h1>PET SHOP</h1>
+        <h3>"BEST PLACE FOR YOUR PET"</h3>
+    </header>
 
+    <div class="container">
         <div class="cards-container">
             <h1>CIBO</h1>   
-            <div class="card">
+            <div class="cards">
                 <?php
                         
                     foreach($foods as $food) {
@@ -36,7 +39,7 @@
         
         <div class="cards-container">
             <h1>CUCCE</h1>   
-            <div class="card">
+            <div class="cards">
                 <?php
                         
                     foreach($kennels as $kennel) {
@@ -49,7 +52,7 @@
 
         <div class="cards-container">
             <h1>GIOCHI</h1>   
-            <div class="card">
+            <div class="cards">
                 <?php
                         
                     foreach($games as $game) {

@@ -2,5 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(39, 199, 21), rgb(13, 124, 35));
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, left, right;
+
+}
+
+.title-cont {
+    text-align: center;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.card h3 {
+    color: white;
+    font-size: 25px;
 }
