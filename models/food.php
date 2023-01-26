@@ -26,7 +26,7 @@ class Food extends Products {
         . "<p> DESCRIZIONE: " . $this -> getDescription() . "</p>"
         . "<p> PREZZO:" . $this -> getPrice() . "</p>"
         . "<p> CATEGORIA: " . $this -> getCategory() . "</p>"
-        . "<p> QUANTITA': " . $this -> $quantity . "</p>";
+        . "<p> QUANTITA': " . $this -> getQuantity() . "</p>";
     }
 }
 

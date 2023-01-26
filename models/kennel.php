@@ -31,7 +31,7 @@ class Kennel extends Products {
     }
 
     public function setMaterial($material) {
-        return $this -> material = $dimension;
+        return $this -> material = $material;
     }
 
     public function getKennel() {
@@ -40,8 +40,8 @@ class Kennel extends Products {
         . "<p> DESCRIZIONE: " . $this -> getDescription() . "</p>"
         . "<p> PREZZO:" . $this -> getPrice() . "</p>"
         . "<p> CATEGORIA: " . $this -> getCategory() . "</p>"
-        . "<p> DIMENSIONE: " . $this -> $dimension . "</p>"
-        . "<p> MATERIALE: " . $this -> $material . "</p>";
+        . "<p> DIMENSIONE: " . $this -> getDimension() . "</p>"
+        . "<p> MATERIALE: " . $this -> getMaterial() . "</p>";
     }
 }
 ?>
