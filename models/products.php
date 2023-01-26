@@ -1,5 +1,11 @@
 <?php
 
+require_once ("models/category.php");
+require_once ("models/products.php");
+require_once ("models/food.php");
+require_once ("models/kennel.php");
+require_once ("models/game.php");
+
 class Products {
 
     public $name;
@@ -9,9 +15,9 @@ class Products {
     
     public function __construct($name, $description, $price, $category) {
         $this -> setName($name);
-        $this -> setPrice($description);
-        $this -> set($price);
-        $this -> set($category);
+        $this -> setDescription($description);
+        $this -> setPrice($price);
+        $this -> setCategory($category);
     }
 
     // name

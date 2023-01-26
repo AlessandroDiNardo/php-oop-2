@@ -1,6 +1,5 @@
 <?php
 
-
 class Food extends Products {
 
     private $quantity;
@@ -12,8 +11,8 @@ class Food extends Products {
         $this -> setQuantity($quantity);
     }
 
-    // quantity
-    public function getQuantity() {
+     // quantity
+     public function getQuantity() {
         return $this -> quantity;
     }
 
@@ -21,14 +20,13 @@ class Food extends Products {
         return $this -> quantity = $quantity;
     }
 
-    // funzione per stampa
     public function getFood() {
 
-        return "<h5>" . $this -> getName() . "</h1>" 
-        . "<p>" . $this -> getDescription() . "</p>"
-        . "<p>" . $this -> getPrice() . "</p>"
-        . "<p>" . $this -> getCategory() . "</p>"
-        . "<p>" . $this -> getQuantity() . "</p>"
+        return "<h5> NOME: " . $this -> getName() . "</h1>" 
+        . "<p> DESCRIZIONE: " . $this -> getDescription() . "</p>"
+        . "<p> PREZZO:" . $this -> getPrice() . "</p>"
+        . "<p> CATEGORIA: " . $this -> getCategory() . "</p>"
+        . "<p> QUANTITA': " . $this -> $quantity . "</p>";
     }
 }
 

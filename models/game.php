@@ -1,19 +1,20 @@
 <?php
 
-    class Game extends Products {
 
-        private $dimension;
+class Game extends Products {
 
-        public function __construct($name, $description, $price, $category, $description, $dimension){
+    private $dimension;
 
-            parent::__construct($name, $description, $price, $category);
+    public function __construct($name, $description, $price, $category, $dimension){
 
-            $this -> setDimension($dimension);
-        }
+        parent::__construct($name, $description, $price, $category);
+
+        $this -> setDimension($dimension);
     }
 
-    // dimension
-    public function getDimension() {
+    
+     // dimension
+     public function getDimension() {
         return $this -> dimension;
     }
 
@@ -21,13 +22,13 @@
         return $this -> dimension = $dimension;
     }
 
-    // funzione per la stampa 
     public function getGame() {
 
-        return  "<h5>" . $this -> getName() . "</h1>" 
-        . "<p>" . $this -> getDescription() . "</p>"
-        . "<p>" . $this -> getPrice() . "</p>"
-        . "<p>" . $this -> getCategory() . "</p>"
-        . "<p>" . $this -> getDimension() . "</p>"
+        return "<h5> NOME: " . $this -> getName() . "</h1>" 
+        . "<p> DESCRIZIONE: " . $this -> getDescription() . "</p>"
+        . "<p> PREZZO:" . $this -> getPrice() . "</p>"
+        . "<p> CATEGORIA: " . $this -> getCategory() . "</p>"
+        . "<p> DIMENSIONE': " . $this -> $dimension . "</p>";
     }
+}
 ?>

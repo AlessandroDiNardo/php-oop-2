@@ -1,5 +1,7 @@
 <?php
 
+
+
 class Kennel extends Products {
 
     private $dimension;
@@ -9,12 +11,13 @@ class Kennel extends Products {
 
         parent::__construct($name, $description, $price, $category);
 
-        $this -> setDimension($dimension)
-        $this -> setMaterial($material)
+        $this -> setDimension($dimension);
+        $this -> setMaterial($material);
     }
 
-    // dimension
-    public function getDimension() {
+    
+     // dimension
+     public function getDimension() {
         return $this -> dimension;
     }
 
@@ -23,23 +26,22 @@ class Kennel extends Products {
     }
 
     // material
-    public function geMmaterial() {
+    public function getMaterial() {
         return $this -> material;
     }
 
     public function setMaterial($material) {
-        return $this -> material = $material;
+        return $this -> material = $dimension;
     }
 
-
-    // funzione per la stampa 
     public function getKennel() {
 
-        return "<h5>" . $this -> getName() . "</h1>" 
-        . "<p>" . $this -> getDescription() . "</p>"
-        . "<p>" . $this -> getPrice() . "</p>"
-        . "<p>" . $this -> getCategory() . "</p>"
-        . "<p>" . $this -> getQuantity() . "</p>"
+        return "<h5> NOME: " . $this -> getName() . "</h1>" 
+        . "<p> DESCRIZIONE: " . $this -> getDescription() . "</p>"
+        . "<p> PREZZO:" . $this -> getPrice() . "</p>"
+        . "<p> CATEGORIA: " . $this -> getCategory() . "</p>"
+        . "<p> DIMENSIONE: " . $this -> $dimension . "</p>"
+        . "<p> MATERIALE: " . $this -> $material . "</p>";
     }
 }
 ?>

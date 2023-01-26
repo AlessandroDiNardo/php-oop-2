@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <?php
-        require_once 'db.php';
-        require_once 'models/products.php';
-        require_once 'models/food.php';
-        require_once 'models/kennel.php';
-        require_once 'models/game.php';
+
+        require_once ('db.php');
+        require_once ('models/products.php');
+        require_once ('models/category.php');
+        require_once ('models/products.php');
+        require_once ('models/food.php');
+        require_once ('models/kennel.php');
+        require_once ('models/game.php');
     ?>
 </head>
 <body>
@@ -23,9 +26,11 @@
             <h3>CIBO</h3>   
             <div class="card">
                 <?php
-                    echo $snacksDog -> getFood();
-                    echo "<br> <br>";
-                    echo $snacksCat -> getFood();
+                        
+                    foreach($foods as $food) {
+
+                        echo $food -> getFood();
+                    }
                 ?>
             </div>
         </div>
@@ -34,9 +39,11 @@
             <h3>CUCCE</h3>   
             <div class="card">
                 <?php
-                    echo $kennelDog -> getKennel();
-                    echo "<br> <br>";
-                    echo $kennelCat -> getKennel();
+                        
+                    foreach($kennels as $kennel) {
+
+                        echo $kennel -> getKennel();
+                    }
                 ?>
             </div>
         </div>
@@ -45,9 +52,11 @@
             <h3>GIOCHI</h3>   
             <div class="card">
                 <?php
-                    echo $gameDog -> getGame();
-                    echo "<br> <br>";
-                    echo $gameCat -> getGame();
+                        
+                    foreach($games as $game) {
+
+                        echo $game -> getGame();
+                    }
                 ?>
             </div>
         </div>
